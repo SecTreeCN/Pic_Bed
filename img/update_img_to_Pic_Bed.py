@@ -1,6 +1,6 @@
 import re
 import os
-"""
+
 # 设置目录路径
 directory_path = 'E:/Blog/source/_posts'
 
@@ -9,7 +9,7 @@ for filename in os.listdir(directory_path):
     if filename.endswith('.md'):  # 确认文件是Markdown文件
         full_path = os.path.join(directory_path, filename)
         # 移除文件拓展名，并将其添加进URL
-        prefix = f'https://cdn.jsdelivr.net/gh/SecTreeCN/Pic_Bed@main/img/{filename[:-3]}'
+        prefix = f'https://mypic.treesec.cn/img/{filename[:-3]}'
 
         # 读取文件内容
         with open(full_path, 'r', encoding='utf-8') as file:
@@ -52,4 +52,4 @@ def update_image_links(md_file_path, img_folder_name):
 update_image_links('E:/Blog/source/_posts/CISCN2024.md', 'CISCN2024')
 
 # 以后如果您想更新 'xxx.md' 文件中的链接，只需调用函数并传入相应参数
-# update_image_links('path_to_your_markdown_file/xxx.md', 'xxx')
+# update_image_links('path_to_your_markdown_file/xxx.md', 'xxx')"""
